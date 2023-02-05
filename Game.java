@@ -71,7 +71,7 @@ public class Game extends JPanel implements ActionListener
   public void step(ActionEvent e)
 	{
     //game over if bar cannot shrink further
-    if(score>0 && !bar.shrink())
+    if(score>0 && !bar.shrink(hard))
     {
       this.timer.stop();
       for(int i=0;i<4+hard;i++)

@@ -23,7 +23,7 @@ public class TimeBar
   }
 
   //reduces length if possible or else return false
-  public boolean shrink()
+  public boolean shrink(int hard)
   {
     if(this.length == 0)
     {
@@ -31,7 +31,7 @@ public class TimeBar
     }
     else
     {
-      this.length -=2;
+      this.length -=2 + hard * 2;
       return true;
     }
   }
